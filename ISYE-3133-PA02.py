@@ -82,5 +82,7 @@ inv_index = num_products*num_months
 for i in range(num_products):
 	inv_df['Product %d' % i] = [v.x for v in vars_list[i * num_months + inv_index: i * num_months + num_months + inv_index]]
 
+print("Number of units to produce")
 print(x_df)
+print("Number of units in inventory")
 print(inv_df)
